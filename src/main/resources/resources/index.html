@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Jingtian Zou's Homepage!</h1>
+</header>
+
+<!-- Button to open the modal login form -->
+<button class="main-btn" onclick="document.getElementById('modal-login').style.display='block'">
+    Click Here To Login
+</button>
+
+<!-- The Modal -->
+<div id="modal-login" class="modal">
+
+    <!-- Modal Content | insert database url in action -->
+    <form name="login-form"
+          class="modal-content animate"
+          action="http://localhost:8080/check"
+          method="get"
+          onsubmit="return validateForm();">
+
+        <div class="img-container">
+            <span class="close-btn" onclick="document.getElementById('modal-login').style.display='none'" title="Close Window">&times;</span>
+            <img src="./images/hello.jpg" alt="hello" class="hello">
+        </div>
+
+        <div class="container">
+            <!-- Input user name -->
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter Username" required><br>
+
+            <!-- Input password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+
+            <!-- Show error message -->
+            <span id="msg" class="msg"></span><br>
+
+            <!-- Login button -->
+            <input type="submit" class="login-btn" value="Login">
+        </div>
+
+        <div class="container" style="background-color:#e0dcf3">
+            <!-- Cancel button -->
+            <button class="cancel-btn" onclick="document.getElementById('modal-login').style.display='none'">Cancel</button>
+            <span class="psw" onclick="showAnswer()">Forgot password?</span>
+        </div>
+
+    </form>
+</div>
+
+<script src="./js/login.js"></script>
+
+</body>
+</html>

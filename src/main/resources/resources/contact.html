@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href='./css/style.css' rel='stylesheet' type="text/css">
+    <link href='./css/layout.css' rel='stylesheet' type="text/css">
+    <link  href="./pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- CSS Grid Layout -->
+<div class="grid-container">
+
+    <!-- Header -->
+    <header class="item header">Jingtian Zou</header>
+
+    <!-- Navigation -->
+    <nav class="item nav">
+        <ul>
+            <li><a href="./home.html" class="active">Home</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./interest.html">Interest</a></li>
+            <li><a href="./pet.html">Pet</a></li>
+            <li><a href="./hometown.html">Hometown</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="item contact">
+        <div class="contact-info">
+            <h2 class="contact-title">Contact Me</h2>
+
+            <div class="contact-item">
+                <span class="pe-7s-map-marker icon"></span>
+                <div class="contact-text">
+                    <span>Find Me</span>
+                    <p>Bay Area, CA</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="pe-7s-mail icon"></span>
+                <div class="contact-text">
+                    <span>Mail Me</span>
+                    <p><a href="mailto:jtzou@bu.edu">jtzou@bu.edu</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="pe-7s-call icon"></span>
+                <div class="contact-text">
+                    <span>Call Me</span>
+                    <p>+1 (925)557-5177</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="item message">
+        <h2 class="message-title">Leave Me A Message</h2>
+        <div class="form-container">
+            <form class="msgForm"
+                  name="msgForm"
+                  action="#insert web server link here"
+                  method="post"
+                  onsubmit="validateForm(); return false;">
+
+                <div class="form-item">
+                    <label for="name">Name </label>
+                    <input type="text" name="name" id="name" placeholder="your name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Please choose an option</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="notSay">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email </label>
+                    <input type="text" name="email" id="email" placeholder="your email" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="checkBox">How would you like to be contacted? </label>
+                    <div class="checkBox" id="checkBox">
+                        <input type="checkbox" id="contact1" name="contact" value="email">
+                        <label for="contact1">Email</label>
+                        <input type="checkbox" id="contact2" name="contact" value="message">
+                        <label for="contact2">Text Message</label>
+                        <input type="checkbox" id="contact3" name="contact" value="phone">
+                        <label for="contact3">Phone</label>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="show">Do you want to show your message on this page? </label>
+                    <div class="show" id="show">
+                        <input type="radio" id="yes" name="showMsg" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="showMsg" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="msg" placeholder="your suggestion.." style="height:100px" required></textarea>
+                </div>
+
+                <!-- show error message -->
+                <span id="error"></span><br>
+
+                <!-- submit button -->
+                <div class="button">
+                    <input type="submit" name="submitButton" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Message Board -->
+    <section class="item board">
+        <h2 class="board-title">Message Board</h2>
+        <div class="board-item">
+            <p>123</p>
+        </div>
+        <div class="board-item">
+            <p>456</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="item footer">
+        Author: Jingtian Zou | Email: jtzou@bu.edu
+    </footer>
+
+</div>
+
+<!-- Validate the Message Form -->
+<script src="./js/validation.js"></script>
+
+</body>
+
+</html>
