@@ -19,19 +19,14 @@ public class MessageController {
         this.messageRepository = messageRepository;
     }
 
+    @CrossOrigin(origins = "*")
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public boolean createMessage(@RequestParam String name,
-                                 @RequestParam String gender,
-                                 @RequestParam String email,
-                                 @RequestParam( required = false) String phone,
-                                 @RequestParam String contact,
-                                 @RequestParam String showmsg,
-                                 @RequestParam String msg) {
-        Message message = new Message(name, gender, email, phone, contact, showmsg, msg);
+    public boolean createMessage(@RequestBody Message message) {
         return messageRepository.save(message) != null? true: false;
     }
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/get")
     public List<Message> getMessage() {
         Iterator<Message> iterator = messageRepository.findAll().iterator();

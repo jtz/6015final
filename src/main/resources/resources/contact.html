@@ -64,10 +64,8 @@
         <h2 class="message-title">Leave Me A Message</h2>
         <div class="form-container">
             <form class="msgForm"
-                  name="msgForm"
-                  action="#insert web server link here"
-                  method="post"
-                  onsubmit="validateForm(); return false;">
+                  id="msgForm"
+                  name="msgForm">
 
                 <div class="form-item">
                     <label for="name">Name </label>
@@ -85,8 +83,13 @@
                 </div>
 
                 <div class="form-item">
-                    <label for="email">Email </label>
-                    <input type="text" name="email" id="email" placeholder="your email" required>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="+1(123)345-6789" required>
                 </div>
 
                 <div class="form-item">
@@ -104,9 +107,9 @@
                 <div class="form-item">
                     <label for="show">Do you want to show your message on this page? </label>
                     <div class="show" id="show">
-                        <input type="radio" id="yes" name="showMsg" value="yes">
+                        <input type="radio" id="yes" name="showmsg" value="yes">
                         <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="showMsg" value="no">
+                        <input type="radio" id="no" name="showmsg" value="no">
                         <label for="no">No</label>
                     </div>
                 </div>
@@ -121,7 +124,7 @@
 
                 <!-- submit button -->
                 <div class="button">
-                    <input type="submit" name="submitButton" value="Submit">
+                    <input type="submit" name="submitButton" value="Send">
                 </div>
             </form>
         </div>
@@ -145,8 +148,11 @@
 
 </div>
 
-<!-- Validate the Message Form -->
-<script src="./js/validation.js"></script>
+<!--&lt;!&ndash; Validate the Message Form &ndash;&gt;-->
+<!--<script src="./js/validateForm.js"></script>-->
+
+<!-- Send the Message Form to Web Server-->
+<script type="module" src="./js/sendForm.js"></script>
 
 </body>
 
