@@ -23,21 +23,12 @@ public class MessageController {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     public boolean createMessage(@RequestBody Message message) {
-        return messageRepository.save(message) != null? true: false;
+        return messageRepository.save(message) != null;
     }
 
     @CrossOrigin(origins = "*")
     @GetMapping("/get")
     public List<Message> getMessage() {
-        Iterator<Message> iterator = messageRepository.findAll().iterator();
-        List<Message> messageList = new ArrayList<>();
-        while (iterator.hasNext()) {
-            Message message = iterator.next();
-            if ("yes".equalsIgnoreCase(message.getShowmsg())) {
-                // allow show in page
-                messageList.add(message);
-            }
-        }
-        return messageList;
+        return messageRepository.findByShowmsg("yes");
     }
 }
