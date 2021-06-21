@@ -7,12 +7,8 @@
 *  02.Home
 *  03.Education
 *  04.Interest
-*  05.About Section
-*  06.Resume Section
-*  07.Services Section
-*  08.Portfolio Section
-*  09.Blog Section
-*  10.Contact Section
+*  05.Pet
+*  06.Contact
 * -----------------------------------
 */
 
@@ -230,8 +226,60 @@ footer {
     /*-ms-transform: translate(-50%, -50%);*/
 }
 
+/* 05.Pet */
 
-/* Contact */
+.app h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 40px;
+}
+
+.app p {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    color: #fcfbfe;
+    background-color: #bdcfef;
+}
+
+.raise img {
+    cursor: crosshair;
+}
+
+.raise ol {
+    margin-left: 30%;
+    text-align: left;
+    justify-content: center;
+}
+
+.adopt button {
+    color: #fcfbfe;
+    background-color: #ada2df;
+    font-family: "Rockwell", Georgia, serif;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.adopt button:hover {
+    color: #9c8fd6;
+    background-color: #fcfbfe;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.disabled {
+    background-color: lightsteelblue;
+    cursor: not-allowed;
+}
+
+
+
+/* 06.Contact */
 
 .contact-title, .message-title, .board-title {
     /*font-size: 1.8em;*/
@@ -311,4 +359,8 @@ input[type=submit]:hover {
     height: 1.2em;
     color: #e74d6c;
     border: 1px solid blue;
+}
+
+.board-item p {
+    font-size: 0.8em;
 }

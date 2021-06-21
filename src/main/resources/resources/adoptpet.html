@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt Pet</title>
+    <link href='./css/style.css' rel='stylesheet' type="text/css">
+    <link href='./css/layout.css' rel='stylesheet' type="text/css">
+
+</head>
+
+<body>
+<!-- CSS Grid Layout -->
+<div class="grid-container">
+
+    <!-- Header -->
+    <header class="item header">Jingtian Zou</header>
+
+    <!-- Navigation -->
+    <nav class="item nav">
+        <ul>
+            <li><a href="./home.html" class="active">Home</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./interest.html">Interest</a></li>
+            <li><a href="./pet.html">Pet</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use Vue.js -->
+    <div id="app" class="item app">
+
+        <!-- Guess Section -->
+        <div class="guess">
+            <h1>{{ headline }}</h1>
+        </div>
+
+        <!-- Pet Raise Section -->
+        <div class="raise">
+
+            <div class="cat-container">
+                <img :src="hover1 ? images.kitten : images.cat"
+                     @mouseover="hover1 = true"
+                     @mouseleave="hover1 = false"
+                     alt="cat-kitten">
+                <p>{{ title1 }}</p>
+                <ol>
+                    <li v-for="tip in tipsForCat">{{ tip }}</li>
+                </ol>
+                <a :href="link.raiseCat" target="_blank">Learn More: How to Raise a Cat</a>
+            </div>
+
+            <div class="dog-container">
+                <img :src="hover2 ? images.puppy : images.dog"
+                     @mouseover="hover2 = true"
+                     @mouseleave="hover2 = false"
+                     alt="dog-puppy">
+                <p>{{ title2 }}</p>
+                <ol>
+                    <li v-for="tip in tipsForDog">{{ tip }}</li>
+                </ol>
+                <a :href="link.raiseDog" target="_blank">Learn More: How to Raise a Dog</a>
+            </div>
+
+        </div>
+
+        <!-- Adopt Section -->
+        <div class="adopt">
+            <div class="adopt-container">
+                <button v-on:click="adoptPet"
+                        v-bind:class="{ disabled: !isAvailable }"
+                        v-bind:disabled="!isAvailable">
+                    Adopt a Cat or Dog Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="item footer">
+            Author: Jingtian Zou | Email: jtzou@bu.edu
+        </footer>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                headline: "Guess what I looked like when I was young!",
+                title1: "Tips for Raising a Cat",
+                title2: "Tips for Raising a Dog",
+                hover1: false,
+                hover2: false,
+                isAvailable: true,
+                images: {
+                    cat: "./images/cat.jpg",
+                    kitten: "./images/kitten.jpg",
+                    dog: "./images/dog.jpg",
+                    puppy: "./images/puppy.jpg"
+                },
+                link: {
+                    raiseCat: "https://www.wikihow.com/Raise-a-Cat",
+                    raiseDog: "https://www.wikihow.com/Raise-a-Dog"
+                },
+                tipsForCat: [
+                    "Feeding Your Cat",
+                    "Providing for Safety, Comfort, and Hygiene",
+                    "Getting Veterinary Care",
+                    "Giving Affection and Attention"
+                ],
+                tipsForDog: [
+                    "Potty Training Your Dog",
+                    "Crate Training Your Puppy",
+                    "Socializing Your Dog",
+                    "Training Your Dog with Voice Commands"
+                ]
+            },
+
+            methods: {
+                adoptPet: function () {
+                    alert("You will be redirected to a pet adoption website.")
+                    window.location.href = "https://www.adoptapet.com/"
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

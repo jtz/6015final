@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 <!-- CSS Grid Layout -->
 <div class="grid-container">
 
@@ -89,7 +90,7 @@
 
                 <div class="form-item">
                     <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone" placeholder="+1(123)345-6789" required>
+                    <input type="text" name="phone" id="phone" placeholder="+1(012)345-6789" required>
                 </div>
 
                 <div class="form-item">
@@ -120,7 +121,7 @@
                 </div>
 
                 <!-- show error message -->
-                <span id="error"></span><br>
+                <span id="error"></span>
 
                 <!-- submit button -->
                 <div class="button">
@@ -130,14 +131,13 @@
         </div>
     </section>
 
-    <!-- Message Board -->
+    <!-- Message Board Section-->
     <section class="item board">
-        <h2 class="board-title">Message Board</h2>
-        <div class="board-item">
-            <p>123</p>
-        </div>
-        <div class="board-item">
-            <p>456</p>
+        <div class="board-container">
+            <h2 class="board-title">Message Board</h2>
+            <div class="board-item">
+                <p id="showNameAndMsg"></p>
+            </div>
         </div>
     </section>
 
@@ -147,9 +147,6 @@
     </footer>
 
 </div>
-
-<!--&lt;!&ndash; Validate the Message Form &ndash;&gt;-->
-<!--<script src="./js/validateForm.js"></script>-->
 
 <!-- Send the Message Form to Web Server-->
 <script type="module" src="./js/sendForm.js"></script>

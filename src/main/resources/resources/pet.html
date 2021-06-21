@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <title>Pet</title>
-    <link href='../CSS/screenstyle.css' rel='stylesheet' type="text/css">
-    <link href='../CSS/printstyle.css' rel='stylesheet' type="text/css" media="print">
-  </head>
-      
-  <body>
+    <link href='./css/style.css' rel='stylesheet' type="text/css">
+    <link href='./css/layout.css' rel='stylesheet' type="text/css">
+</head>
 
-    <header>
-      <a class="name-logo" href="indexbackup.html">Jingtian Zou</a>
-      <!-- main navigation bar that is used on all pages and contain links to the other pages -->
-      <nav class="main-nav">
+<body>
+<!-- CSS Grid Layout -->
+<div class="grid-container">
+
+    <!-- Header -->
+    <header class="item header">Jingtian Zou</header>
+
+    <!-- Navigation -->
+    <nav class="item nav">
         <ul>
-          <li><a href="indexbackup.html">Introduction</a></li>
-          <li><a href="hometown.html">Hometown</a></li>
-          <li><a href="pet.html"  class="active">Pet</a></li>
+            <li><a href="./home.html" class="active">Home</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./interest.html">Interest</a></li>
+            <li><a href="./pet.html">Pet</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
 
-    <section id="separation-three">
-      <img src="../image/catcup.jpg" alt="catcup">
+    <!-- Separation -->
+    <div class="item separation">
+        <img src="./images/catcup.jpg" alt="Cat Cup">
+    </div>
+
+    <!-- About Ziye Section -->
+    <section class="item intro-ziye">
+        <div class="intro-container">
+            <h2 class="intro-ziye-title">About Ziye</h2>
+            <ul>
+                <li>Name: Ziye</li>
+                <li>Color: Gray Tuxedo</li>
+                <li>Breed: Domestic Medium Hair</li>
+                <li>Hobby: Making Trouble</li>
+            </ul>
+            <p>I used to have a gray medium-hair cat named Ziye. She was three-month old and looked helpless when I
+                first saw her in shelter, so I adopted her and treated her as my family. She was a troublemaker rather
+                than a docile pet when she was young. She liked jumping from dinning table to sofa, or from cat tree
+                to TV stand. When she grown up, she became warm with me, and she often dragged her favorite toys to
+                me. But she feared strangers so much that she would hide herself under bed when someone visited my home.</p>
+        </div>
     </section>
 
-    <section id="navigation">
-      <nav class="page-nav">
-        <ul>
-          <li><a href="#introduction">About Ziye</a></li>
-          <li><a href="#birthday">Birthday</a></li>
-          <li><a href="#moment">Memorable Moments</a></li>
-        </ul>
-      </nav>
+    <!-- Memorable Moments Section -->
+    <section class="item moment">
+        <div class="moment-container">
+            <div class="moment-img">
+                <img src="./images/birthday.jpg" alt="Ziye's 1st Birthday">
+            </div>
+            <div class="moment-video">
+                <video src="./video/catplay.mp4" controls>Video not supported</video>
+            </div>
+        </div>
     </section>
 
-    <section id="introduction">
-      <h2>About Ziye</h2>
-      <p>I used to have a gray medium-hair cat named Ziye. She was three-month old and looked helpless when I first saw
-         her in shelter, so I adopted her and treated her as my family. She was a troublemaker rather than a docile pet
-         when she was young. She liked jumping from dinning table to sofa, or from cat tree to TV stand. When she growed
-         up, she became warm with me, and she often dragged her favorate toys to me. But she feared strangers so much
-         that she would hide herself under bed when someone visited my home.</p>
-    </section>
-
-    <section id="birthday">
-      <h2>Birthday</h2>
-      <p>This picture was taken at Ziye's 1st birthday.</p>
-      <img src="../image/birthday.jpg" alt="Ziye's 1st Birthday">
-    </section>
-
-    <section id="moment">
-      <h2>Memorable Moments</h2>
-      <p>We had some pretty memorable times together. For example, we play Lego together.</p>
-      <video src="../video/catplay.mp4" controls>Video not supported</video>
-    </section>
-
-    <footer>
-      <p>Author: Jingtian Zou | Email: jtzou@bu.edu</p>
+    <!-- Footer -->
+    <footer class="item footer">
+        Author: Jingtian Zou | Email: jtzou@bu.edu
     </footer>
 
-  </body>
+</div>
+</body>
 
 </html>

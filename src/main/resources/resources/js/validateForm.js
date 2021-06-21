@@ -49,12 +49,12 @@ const checkEmail = element => {
     }
 };
 
-// Validate phone to ensure the format +1(123)345-6789 is matched
+// Validate phone to ensure the format +1(012)345-6789 is matched
 const checkPhone = element => {
     checkLength(element);
     const phoneFormat = /[+]\d[(]\d{3}[)]\d{3}[\-]\d{4}/g;
     if (!element.value.match(phoneFormat)) {
-        error.innerHTML = "Sorry: Phone number must be +1(123)345-6789 format.";
+        error.innerHTML = "Sorry: Phone number must be +1(012)345-6789 format.";
         element.focus();
         return false;
     } else {

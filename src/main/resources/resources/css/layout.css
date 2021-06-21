@@ -7,19 +7,16 @@
 *  02.Home
 *  03.Education
 *  04.Interest
-*  05.About Section
-*  06.Resume Section
-*  07.Services Section
-*  08.Portfolio Section
-*  09.Blog Section
-*  10.Contact Section
+*  05.Pet
+*  06.Adopt
+*  07.Contact
 * -----------------------------------
 */
 
 /* 01.Common Styles */
 
 *{
-    /*border: 1px dotted red;*/
+    border: 1px dotted red;
 }
 
 .grid-container {
@@ -107,7 +104,63 @@
     flex-wrap: wrap;
 }
 
-/* Contact */
+/* 05.Pet */
+
+.intro-ziye {
+    grid-column: 3 / 6;
+    grid-row: 8 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-container {
+    margin: 0;
+}
+
+.moment {
+    grid-column: 6 / 11;
+    grid-row: 8 / 12;
+    display: flex;
+    justify-content: center;
+}
+
+.moment-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 06.Adopt */
+
+.app {
+    grid-column: 3 / 11;
+    grid-row: 4 / 12;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    justify-content: space-between;
+}
+
+.guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.raise {
+    display: flex;
+    justify-content: space-around;
+}
+
+.adopt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 07.Contact */
 
 .contact {
     grid-column: 3 / 5;
@@ -159,14 +212,27 @@
     flex-direction: column;
 }
 
-
-
 .board {
     grid-column: 9 / 11;
     grid-row: 4 / 12;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
+
+.board-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.board-item {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+
 
 
 
