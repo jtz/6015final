@@ -18,7 +18,7 @@ html, body {
     font-size: 100%;
     height: 100%;
     min-height: 100%;
-    min-width: 1280px;
+    min-width: 1980px;
     padding: 0;
     margin: 0;
 
@@ -29,7 +29,7 @@ html, body {
 body {
     font-family: 'Quicksand', Candara, sans-serif;
     line-height: 1.5;
-    color: slategray;
+    color: #676f85;
 }
 
 header {
@@ -80,7 +80,8 @@ nav ul li a.active::before {
     background: salmon;
 }
 
-.separation img {
+.separation img,
+.separation-bottom img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -135,16 +136,16 @@ footer {
     font-size: 1.5em;
     font-weight: 600;
     color: #fcfbfe;
-    background-color: #ada2df;
+    background-color: #cec8ec;
     border: none;
     border-radius: 12px;
     padding: 15px 100px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     cursor: pointer;
 }
 
 .edu-btn:hover {
-    color: #9c8fd6;
+    color: #ada2df;
     background-color: #fcfbfe;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -162,7 +163,7 @@ footer {
 }
 
 .edu-table th {
-    background-color: #9c8fd6;
+    background-color: #fefee1;
     color: white;
 }
 
@@ -335,18 +336,27 @@ footer {
 /* 06.Contact */
 
 .contact-title, .message-title, .board-title {
-    /*font-size: 1.8em;*/
     font-weight: 700;
-    color: lightskyblue;
+    color: steelblue;
 }
 
-.contact-item {
-    margin: 10px 0;
+.contact-title, .contact-item, .board-title {
+    margin: 20px 0 20px 30px;
 }
+
+/* Contact Info */
 
 .contact-item .icon {
     font-size: 3em;
     color: lightskyblue;
+}
+
+.contact-item a {
+    color: slategray;
+}
+
+.contact-item a:hover {
+    color: salmon;
 }
 
 .contact-text {
@@ -354,27 +364,23 @@ footer {
 }
 
 .contact-text span {
-    font-size: 1.1em;
     font-weight: 600;
-}
-
-.contact-text p {
-    font-size: 1em;
 }
 
 /* Message Form */
 
 .form-container {
-    font-size: 1em;
-    border-radius: 5px;
-    background-color: lavender;
+    border-radius: 10px;
+    background-color: #c1ddec;
     padding: 20px;
-    margin: 0;
+    margin: 0 20px 0 0;
 }
 
 .form-item {
     font-size: 0.9em;
-    margin-bottom: 12px;
+    font-weight: 500;
+    color: #343b43;
+    margin-bottom: 15px;
 }
 
 input[type=text], select, textarea {
@@ -383,37 +389,41 @@ input[type=text], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /*margin-top: 6px;*/
-    /*margin-bottom: 16px;*/
     resize: vertical;
 }
 
 input[type=submit] {
-    color: #fcfbfe;
-    background-color: #ada2df;
-    font-family: "Rockwell", Georgia, serif;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight:500;
+    color: steelblue;
+    background-color: #fefee1;
     border: none;
     border-radius: 12px;
-    padding: 8px 40px;
-    transition-duration: 0.4s;
+    padding: 8px 50px;
+    transition-duration: 0.3s;
     cursor: pointer;
     display: block;
     margin: 0 auto;
 }
 
 input[type=submit]:hover {
-    color: #9c8fd6;
-    background-color: #fcfbfe;
+    /*color: #9c8fd6;*/
+    background-color: #ffdae0;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #error {
     height: 1.2em;
     color: #e74d6c;
-    border: 1px solid blue;
 }
 
-.board-item p {
-    font-size: 0.8em;
+/* Message Board */
+
+.board-item {
+    margin: 0 20px 20px 30px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
 }

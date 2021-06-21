@@ -1,12 +1,12 @@
 /* default font-size is 16px, 1em = 16px, px/16 = em */
 
 body {
-    background-image: linear-gradient(60deg, #f5c2e8, #6aafe7 );
+    background-image: linear-gradient(60deg, #72add4, #f8fbfd);
     background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Quicksand', Candara, sans-serif;
     font-size: 100%;
 }
 
@@ -15,7 +15,7 @@ header {
     margin-top: 120px;
     margin-bottom: 120px;
     color: #fcfbfe;
-    background-color: #bdcfef;
+    background-color: #9ec6e1;
     text-align: center;
 }
 
@@ -29,18 +29,18 @@ h1 {
     font-size: 1.5em;
     font-weight: 600;
     color: #fcfbfe;
-    background-color: #ada2df;
+    background-color: #71acd4;
     border: none;
     border-radius: 12px;
     padding: 15px 100px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     cursor: pointer;
     display: block;
     margin: 0 auto;
 }
 
 .main-btn:hover {
-    color: #9c8fd6;
+    color: #62a3cf;
     background-color: #fcfbfe;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -89,7 +89,7 @@ input[type=password] {
     padding: 12px 20px;
     margin: 10px 0;
     display: inline-block;
-    border: 1px solid #6b57c2;
+    border: 1px solid #71acd4;
     box-sizing: border-box;
 }
 
@@ -118,7 +118,7 @@ span.msg {
 .login-btn {
     font-size: 1em;
     font-weight: 600;
-    background-color: #ada2df;
+    background-color: #71acd4;
     color: #fcfbfe;
     padding: 12px 20px;
     margin: 8px 0;
@@ -132,7 +132,7 @@ span.msg {
     width: auto;
     padding: 10px 18px;
     cursor: pointer;
-    border: 1px solid #9c8fd6;
+    border: 1px solid #62a3cf;
     background-color: #ffffff;
 }
 
@@ -152,27 +152,6 @@ span.psw {
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancel-button {
-        width: 100%;
-    }
 }
 
 

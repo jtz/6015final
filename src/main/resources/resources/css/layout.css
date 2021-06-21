@@ -103,9 +103,16 @@
 /* 03.Education */
 
 .edu {
-    grid-column: 4 / 10;
-    grid-row: 8 / 16;
-    place-self: center;
+    grid-column: 3 / 11;
+    grid-row: 9 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separation-bottom {
+    grid-column: 3 / 11;
+    grid-row: 11 / 16;
 }
 
 
@@ -182,18 +189,13 @@
 
 /* 07.Contact */
 
+/* Contact Info */
+
 .contact {
     grid-column: 3 / 5;
-    grid-row: 4 / 12;
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-}
-
-.contact-info {
+    grid-row: 4 / 16;
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
 .contact-item {
@@ -208,13 +210,13 @@
     justify-content: center;
 }
 
+/* Message Form */
+
 .message {
     grid-column: 5 / 9;
-    grid-row: 4 / 12;
+    grid-row: 4 / 16;
     display: flex;
     flex-direction: column;
-    /*align-items: start;*/
-    /*justify-items: stretch;*/
 }
 
 .msgForm {
@@ -224,7 +226,6 @@
     align-content: space-between;
     align-items: stretch;
     justify-items: stretch;
-
 }
 
 .form-item {
@@ -232,25 +233,15 @@
     flex-direction: column;
 }
 
+/* Message Board */
+
 .board {
     grid-column: 9 / 11;
-    grid-row: 4 / 12;
-    display: flex;
-    justify-content: center;
-}
-
-.board-container {
-    width: 80%;
+    grid-row: 4 / 16;
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
-.board-item {
-    width: 100%;
-    overflow-y: scroll;
-    overflow-wrap: break-word;
-}
 
 
 

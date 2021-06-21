@@ -9,8 +9,9 @@
     <!-- CSS Layout with Grid & Flexbox -->
     <link href='./css/layout.css' rel='stylesheet' type="text/css">
     <!-- Google Fonts "Quicksand" -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <!-- Pixeden Icon Font Set -->
     <link  href="./pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css">
 </head>
@@ -37,31 +38,29 @@
 
     <!-- Contact Section -->
     <section class="item contact">
-        <div class="contact-info">
-            <h2 class="contact-title">Contact Me</h2>
+        <h2 class="contact-title">Contact Me</h2>
 
-            <div class="contact-item">
-                <span class="pe-7s-map-marker icon"></span>
-                <div class="contact-text">
-                    <span>Find Me</span>
-                    <p>Bay Area, CA</p>
-                </div>
+        <div class="contact-item">
+            <span class="pe-7s-map-marker icon"></span>
+            <div class="contact-text">
+                <span>Find Me</span>
+                <p>Bay Area, CA</p>
             </div>
+        </div>
 
-            <div class="contact-item">
-                <span class="pe-7s-mail icon"></span>
-                <div class="contact-text">
-                    <span>Mail Me</span>
-                    <p><a href="mailto:jtzou@bu.edu">jtzou@bu.edu</a></p>
-                </div>
+        <div class="contact-item">
+            <span class="pe-7s-mail icon"></span>
+            <div class="contact-text">
+                <span>Mail Me</span>
+                <p><a href="mailto:jtzou@bu.edu">jtzou@bu.edu</a></p>
             </div>
+        </div>
 
-            <div class="contact-item">
-                <span class="pe-7s-call icon"></span>
-                <div class="contact-text">
-                    <span>Call Me</span>
-                    <p>+1 (925)557-5177</p>
-                </div>
+        <div class="contact-item">
+            <span class="pe-7s-call icon"></span>
+            <div class="contact-text">
+                <span>Call Me</span>
+                <p>+1 (925)557-5177</p>
             </div>
         </div>
     </section>
@@ -69,10 +68,9 @@
     <!-- Message Section -->
     <section class="item message">
         <h2 class="message-title">Leave Me A Message</h2>
+
         <div class="form-container">
-            <form class="msgForm"
-                  id="msgForm"
-                  name="msgForm">
+            <form class="msgForm" id="msgForm" name="msgForm">
 
                 <div class="form-item">
                     <label for="name">Name </label>
@@ -123,7 +121,7 @@
 
                 <div class="form-item">
                     <label for="msg">Message</label>
-                    <textarea id="msg" name="msg" placeholder="your suggestion.." style="height:100px" required></textarea>
+                    <textarea id="msg" name="msg" placeholder="your suggestion.." style="height:120px" required></textarea>
                 </div>
 
                 <!-- show error message -->
@@ -133,17 +131,16 @@
                 <div class="button">
                     <input type="submit" name="submitButton" value="Send">
                 </div>
+
             </form>
         </div>
     </section>
 
     <!-- Message Board Section-->
     <section class="item board">
-        <div class="board-container">
-            <h2 class="board-title">Message Board</h2>
-            <div class="board-item">
-                <p id="showNameAndMsg"></p>
-            </div>
+        <h2 class="board-title">Message Board</h2>
+        <div class="board-item">
+            <p id="showNameAndMsg"></p>
         </div>
     </section>
 
@@ -158,5 +155,4 @@
 <script type="module" src="./js/sendForm.js"></script>
 
 </body>
-
 </html>
