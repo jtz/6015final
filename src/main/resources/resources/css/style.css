@@ -7,8 +7,8 @@
 *  02.Home
 *  03.Education
 *  04.Interest
-*  05.Pet
-*  06.Contact
+*  06.Adopt
+*  07.Contact
 * -----------------------------------
 */
 
@@ -18,54 +18,40 @@ html, body {
     font-size: 100%;
     height: 100%;
     min-height: 100%;
-    min-width: 1024px;
+    min-width: 1280px;
     padding: 0;
     margin: 0;
 
+    border: 1px solid blue;
     overflow: auto;
 }
 
 body {
-    font-family: Verdana, Arial, sans-serif;
-    background-color: white;
+    font-family: 'Quicksand', Candara, sans-serif;
     line-height: 1.5;
-
+    color: slategray;
 }
 
 header {
-    font-family: 'Century Gothic', Verdana, sans-serif;
-    font-size: 3em;
+    font-size: 2.3em;
     font-weight: 700;
     letter-spacing: 1px;
-    /*padding: 30px;*/
     color: skyblue;
     text-transform: uppercase;
 }
 
 a:link {
     text-decoration: none;
-    color: blue;
 }
 
-/*
 a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+  color: lightsteelblue;
 }
 
 a:hover {
-  color: red;
+  color: salmon;
   background-color: transparent;
-  text-decoration: underline;
 }
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
- */
 
 nav ul {
     margin: 0;
@@ -73,15 +59,15 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 1.5em;
-    margin: 0 40px;
+    font-size: 1.3em;
     text-align: center;
     white-space: nowrap;
-    background-color: lightgoldenrodyellow;
 }
 
 nav ul li a {
     position: relative;
+    font-weight: 500;
+    color: steelblue;
 }
 
 nav ul li a.active::before {
@@ -94,46 +80,54 @@ nav ul li a.active::before {
     background: salmon;
 }
 
-nav ul li a:hover {
-    color: skyblue;
-}
-
 .separation img {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 footer {
-    font-size: 1.2em;
-    background-color: lightblue;
-    opacity: 0.8;
+    border-radius: 10px;
+    background: #d4ebf2;
+    /*background: #c1e1ec;*/
 }
 
 
 /* 02.Home */
 
-.intro {
-    text-align: left;
+.info {
+    margin: 30px 0;
+    border-radius: 10px;
+    background: #fff1f3;
 }
 
-.intro-title {
-    font-size: 1.5em;
+.info img {
+    border-radius: 50%;
+}
+
+.info ul {
+    list-style-type: circle;
+}
+
+.intro {
+    margin: 20px 0 20px 20px;
+}
+
+.intro h2 {
+    font-size: 1.3em;
     font-weight: 600;
     margin: 0 20px;
     padding: 10px;
     color: steelblue;
-    background: lightyellow;
-
+    background: #fefee1;
+    border-radius: 10px;
 }
 
-.intro-p {
-    margin: 0 20px;
-    padding: 5px;
+.intro p {
+    margin: 0 25px;
+    text-align: justify;
 }
 
-.photo-img {
-    border-radius: 50%;
-}
 
 /* 03.Education */
 
@@ -152,7 +146,7 @@ footer {
 .edu-btn:hover {
     color: #9c8fd6;
     background-color: #fcfbfe;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .edu-table {
@@ -166,13 +160,16 @@ footer {
     padding: 20px;
     text-align: left;
 }
+
 .edu-table th {
     background-color: #9c8fd6;
     color: white;
 }
+
 .edu-table tr {
     background-color: #d8d2f7;
 }
+
 .edu-table tr:hover {
     background-color: #fcfbfe;
 }
@@ -269,14 +266,13 @@ footer {
 .adopt button:hover {
     color: #9c8fd6;
     background-color: #fcfbfe;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .disabled {
     background-color: lightsteelblue;
     cursor: not-allowed;
 }
-
 
 
 /* 06.Contact */
@@ -352,7 +348,7 @@ input[type=submit] {
 input[type=submit]:hover {
     color: #9c8fd6;
     background-color: #fcfbfe;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #error {

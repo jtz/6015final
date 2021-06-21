@@ -1,6 +1,6 @@
 /*
 * -----------------------------------
-*  Layout use Grid & Flexbox
+*  Layout with Grid & Flexbox
 *  Author: Jingtian Zou
 * -----------------------------------
 *  01.Common Styles
@@ -16,31 +16,30 @@
 /* 01.Common Styles */
 
 *{
-    border: 1px dotted red;
+    /*border: 1px dotted red;*/
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 80px);
-    /*grid-auto-rows: minmax(50px, auto);*/
-    row-gap: 1px;
+    grid-template-rows: repeat(16, 60px);
+    grid-auto-rows: minmax(60px, auto);
     justify-content: center;
     align-content: center;
     justify-items: stretch;
     align-items: stretch;
-    border: 1px solid red;
+
+    border: 1px solid green;
 }
 
 .item {
-    /*background: #ada2df;*/
-    /*place-self: center stretch; !* place-self: <align-self> <justify-self>; 1 value means 2 values equal *!*/
+    /*background: #bdcfef;*/
     /*display: flex;*/
 }
 
 .header {
     grid-column: 3 / 11;
-    grid-row: 1 / 3;
+    grid-row: 1 / span 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +47,7 @@
 
 .nav {
     grid-column: 3 / 11;
-    grid-row: 3 / 4;
+    grid-row: 3 / span 1;
 }
 
 .nav ul {
@@ -59,12 +58,12 @@
 
 .separation {
     grid-column: 3 / 11;
-    grid-row: 4 / 8;
+    grid-row: 4 / span 5;
 }
 
 .footer {
     grid-column: 3 / 11;
-    grid-row: 12 / 13;
+    grid-row: 16 / 17;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,18 +71,31 @@
 
 /* 02.Home */
 
-.photo {
-    grid-column: 3 / 5;
-    grid-row: 8 / 12;
-    place-self: center;
+.info {
+    grid-column: 3 / span 2;
+    grid-row: 9 / 16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro {
     grid-column: 5 / 11;
-    grid-row: 8 / 12;
+    grid-row: 9 / 16;
+    display: flex;
+    /*justify-content: center;*/
+    align-content: space-around;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*align-content: space-around;*/
+    justify-content: space-around;
 }
 
 /* 03.Education */
@@ -114,6 +126,7 @@
     justify-content: center;
 }
 
+/* dupicate */
 .intro-container {
     margin: 0;
 }
