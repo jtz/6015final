@@ -1,22 +1,21 @@
 const button = document.getElementById("button");
 const table = document.getElementById("table");
 
-// i. Write the event handler
+// Button click event handler
 button.onclick = function() { getDegrees()};
 
 const getDegrees = () => {
 
-    // const httpURL = 'http://localhost:8080/getjson';
-    const httpURL = 'https://jingtian6015.azurewebsites.net/getjson';
+    const httpURL = 'https://jingtian.azurewebsites.net/getjson';
 
-    // ii. Create a XMLHttpRequest object
+    // Create a XMLHttpRequest object
     const httpRequest = new XMLHttpRequest();
     if (!httpRequest) {
         alert("Error: Cannot create an XML HTTP instance.");
         return false;
     }
 
-    // iii. Write code to create the request for the JSON data on the server
+    // Send the request to the server
     httpRequest.open('GET', httpURL, true);
     httpRequest.onreadystatechange = () => {
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
@@ -32,12 +31,10 @@ const getDegrees = () => {
         }
     };
 
-    // iv. Send the request to the server
     httpRequest.send();
 };
 
-// v. Process the returned JSON data using JavaScript
-// vi. Display the JSON data in a HTML table
+// Process the returned JSON data and display in a HTML table dynamically
 const displayInTable = (text) => {
 
     // Get the array

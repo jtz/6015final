@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet</title>
+    <!-- CSS Styles -->
     <link href='./css/style.css' rel='stylesheet' type="text/css">
+    <!-- CSS Layout with Grid & Flexbox -->
     <link href='./css/layout.css' rel='stylesheet' type="text/css">
+    <!-- Google Fonts "Quicksand" -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +23,11 @@
     <!-- Navigation -->
     <nav class="item nav">
         <ul>
-            <li><a href="./home.html" class="active">Home</a></li>
+            <li><a href="./home.html">Home</a></li>
             <li><a href="./education.html">Education</a></li>
             <li><a href="./interest.html">Interest</a></li>
-            <li><a href="./pet.html">Pet</a></li>
+            <li><a href="./pet.html" class="active">Pet</a></li>
+            <li><a href="./adoptpet.html">AdoptPet</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -32,33 +38,26 @@
     </div>
 
     <!-- About Ziye Section -->
-    <section class="item intro-ziye">
-        <div class="intro-container">
-            <h2 class="intro-ziye-title">About Ziye</h2>
-            <ul>
-                <li>Name: Ziye</li>
-                <li>Color: Gray Tuxedo</li>
-                <li>Breed: Domestic Medium Hair</li>
-                <li>Hobby: Making Trouble</li>
-            </ul>
-            <p>I used to have a gray medium-hair cat named Ziye. She was three-month old and looked helpless when I
-                first saw her in shelter, so I adopted her and treated her as my family. She was a troublemaker rather
-                than a docile pet when she was young. She liked jumping from dinning table to sofa, or from cat tree
-                to TV stand. When she grown up, she became warm with me, and she often dragged her favorite toys to
-                me. But she feared strangers so much that she would hide herself under bed when someone visited my home.</p>
-        </div>
+    <section class="item ziye-intro">
+        <h2>About Ziye</h2>
+        <ul>
+            <li><strong>Name</strong>: &nbsp;Ziye</li>
+            <li><strong>Color</strong>: &nbsp;Gray Tuxedo</li>
+            <li><strong>Breed</strong>: &nbsp;Domestic Medium Hair</li>
+            <li><strong>Favorite</strong>: &nbsp;Salmon & Tuna</li>
+        </ul>
+        <p> Ziye was three-month old and looked helpless when I first saw her in shelter, so I adopted her and treated
+            her as my family. She was a troublemaker rather than a docile pet when she was young. When she grown up,
+            she became a warm sensible girl, and she always dragged her favorite toys to share with me. </p>
     </section>
 
-    <!-- Memorable Moments Section -->
-    <section class="item moment">
-        <div class="moment-container">
-            <div class="moment-img">
-                <img src="./images/birthday.jpg" alt="Ziye's 1st Birthday">
-            </div>
-            <div class="moment-video">
-                <video src="./video/catplay.mp4" controls>Video not supported</video>
-            </div>
-        </div>
+    <!-- Ziye Image Section -->
+    <section class="item ziye-img">
+        <img src="./images/birthday.jpg" alt="Ziye's 1st Birthday">
+    </section>
+
+    <section class="item ziye-video">
+        <video src="./video/catplay.mp4" controls>Video not supported</video>
     </section>
 
     <!-- Footer -->

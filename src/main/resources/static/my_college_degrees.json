@@ -1,0 +1,29 @@
+{
+    "my_college_degrees": [
+        {
+            "degree": {
+                "school": "Boston University",
+                "major": "Software Development",
+                "type": "MS",
+                "year": "2022"
+            }
+        },
+        {
+            "degree": {
+                "school": "Xi'an Jiaotong University",
+                "major": "Finance",
+                "type": "MS",
+                "year": "2013"
+            }
+        },
+        {
+            "degree": {
+                "school": "Xi'an Jiaotong University",
+                "major": "Quantitative Economics and Finance",
+                "type": "BS",
+                "year": "2010"
+            }
+        }
+    ]
+}
+
