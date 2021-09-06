@@ -1,6 +1,6 @@
-CS601 Final Project 
+# Homepage
 
--- Jingtian Zou --
+-- CS601 Web Application Development Final Project 
 
 
 Web Server: Azure
