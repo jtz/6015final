@@ -23,7 +23,7 @@ A personal website that includes the following features:
 - Document object model (DOM)
 - Website usability
 - Project management for web design and development
-- No Bootstraps
+- No Bootstraps or Frameworks
 
 ## Link
 
